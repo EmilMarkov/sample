@@ -7,16 +7,16 @@
 
 using namespace std;
 
-void mass_init(int *m, int n, int r) { // m - одномерный массив, n - размер массива, r - число для указания диапазона чисел
-	int *pointer_c; // текущий указатель
+void mass_init(int* m, int n, int r) { // m - одномерный массив, n - размер массива, r - число для указания диапазона чисел
+	int* pointer_c; // текущий указатель
 	for (pointer_c = m; pointer_c < (m + n); pointer_c++)
 	{
 		*pointer_c = rand() % (r * 2 + 1) - r;
 	}
 }
 
-void mass_print(int *m, int n) {
-	int *pointer_c; // текущий указатель
+void mass_print(int* m, int n) {
+	int* pointer_c; // текущий указатель
 	for (pointer_c = m; pointer_c < (m + n); ++pointer_c)
 	{
 		cout << *pointer_c << " ";
